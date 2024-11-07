@@ -1,5 +1,5 @@
 from fastapi import FastAPI,HTTPException,Depends,status, APIRouter,Request
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from typing import Annotated
 import models
 from database import engine,SessionLocal,Base
@@ -31,12 +31,12 @@ def get_db():
 class UserBase(BaseModel):
     username:str
     password:str
-    email:EmailStr
+    email:str
 
 class UserBasePut(BaseModel):
     username:str
     password:str
-    email:EmailStr
+    email:str
     id:int
 
 @router.post('/create_user',status_code=status.HTTP_201_CREATED)
