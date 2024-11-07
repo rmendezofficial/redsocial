@@ -10,3 +10,4 @@ pymysql
 aiomysql
 pillow
 python-multipart
+pydantic
