@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-jose
+passlib
+sqlalchemy
+asyncpg
+databases
+psycopg2
+pymysql
+aiomysql
+pillow
