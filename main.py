@@ -10,7 +10,7 @@ from routers import comments,likes,posts,saves,users,followers,authentication
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://localhost:3000",  # origen de tu frontend
+    "https://redsocialfront.rcmendez.com",  # origen de tu frontend
 ]
 
 app=FastAPI()
